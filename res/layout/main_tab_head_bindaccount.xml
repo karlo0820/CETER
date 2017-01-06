@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <TableLayout
+        android:id="@+id/bindaccount_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <com.jiale.view.ClearableEditText
+                android:id="@+id/bindaccount_account"
+                style="@style/single_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/user_account"
+                android:drawableRight="@drawable/user_delete"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="输入学号"
+                android:inputType="number" >
+            </com.jiale.view.ClearableEditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <com.jiale.view.ClearableEditText
+                android:id="@+id/bindaccount_pwd"
+                style="@style/single_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/user_password"
+                android:drawableRight="@drawable/user_delete"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="输入子系统密码"
+                android:inputType="textPassword" >
+            </com.jiale.view.ClearableEditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <com.jiale.view.ClearableEditText
+                android:id="@+id/bindaccount_pwdRp"
+                style="@style/single_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/user_password"
+                android:drawableRight="@drawable/user_delete"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="重复输入子系统密码"
+                android:inputType="textPassword" >
+            </com.jiale.view.ClearableEditText>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <Button
+                android:id="@+id/bindaccount_bindBtn"
+                style="@style/single_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="绑定账号" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <Button
+                android:id="@+id/bindaccount_canelBtn"
+                style="@style/single_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

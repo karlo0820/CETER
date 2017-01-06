@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_btn" >
+
+    <View
+        android:id="@+id/set_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/set_content_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/border" />
+
+    <RelativeLayout
+        android:id="@+id/set_dialog_btnlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_view"
+        android:padding="10dp" >
+
+        <View
+            android:id="@+id/btn_view"
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:id="@+id/set_dialog_cancel"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/btn_view"
+            android:background="@drawable/dialog_btn"
+            android:text="取消"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/set_dialog_pick"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/btn_view"
+            android:background="@drawable/dialog_btn"
+            android:text="确认"
+            android:textColor="@color/orange"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/set_dialog_settime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="2dp"
+            android:textSize="16sp"
+            android:text="当前设定通知时间为：" />
+
+        <TimePicker
+            android:id="@+id/set_dialog_timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/set_dialog_settime"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

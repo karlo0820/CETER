@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/showdata_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout
+        android:id="@+id/showdata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TableRow android:layout_margin="0.5dip" >
+
+            <TextView
+                android:id="@+id/borrow_type"
+                android:layout_margin="1dip"
+                android:text=""
+                android:textSize="20dip"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:layout_margin="0.5dip" >
+
+            <TextView
+                android:id="@+id/latest_time"
+                android:layout_margin="1dip"
+                android:text=""
+                android:textSize="20dip"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:layout_margin="0.5dip" >
+
+            <TextView
+                android:id="@+id/book_name"
+                android:layout_margin="1dip"
+                android:text=""
+                android:textSize="20dip"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:layout_margin="0.5dip" >
+
+            <TextView
+                android:id="@+id/lease_term"
+                android:layout_margin="1dip"
+                android:text=""
+                android:textSize="20dip"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>

@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/tools_items_top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <TableLayout
+                android:id="@+id/logon_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp" >
+
+                    <com.jiale.view.ClearableEditText
+                        android:id="@+id/usernum"
+                        style="@style/single_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:drawableLeft="@drawable/user_account"
+                        android:drawableRight="@drawable/user_delete"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="输入学号"
+                        android:inputType="number" >
+                    </com.jiale.view.ClearableEditText>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp" >
+
+                    <com.jiale.view.ClearableEditText
+                        android:id="@+id/userpwd"
+                        style="@style/single_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:drawableLeft="@drawable/user_password"
+                        android:drawableRight="@drawable/user_delete"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="输入图书馆密码"
+                        android:inputType="textPassword" >
+                    </com.jiale.view.ClearableEditText>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp" >
+
+                    <com.jiale.view.ClearableEditText
+                        android:id="@+id/code"
+                        style="@style/single_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:drawableRight="@drawable/user_delete"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="验证码"
+                        android:inputType="text" >
+                    </com.jiale.view.ClearableEditText>
+                </TableRow>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/codeimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/nopicture" />
+
+                    <TextView
+                        android:id="@+id/recode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="看不清？"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </TableLayout>
+        </LinearLayout>
+
+        <include layout="@layout/tools_of_libs_nodata" />
+
+        <ListView
+            android:id="@+id/libs_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent"
+            android:dividerHeight="10px">
+        </ListView>
+
+        <!-- <include layout="@layout/tools_of_libs_showdata" /> -->
+    </RelativeLayout>
+
+</LinearLayout>

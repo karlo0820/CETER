@@ -1,0 +1,88 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="activitytheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+    </style>
+    <!-- activity开启关闭样式 -->
+    <style name="activityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/nothing</item>
+        <item name="android:activityCloseEnterAnimation">@anim/nothing</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
+    <!-- setting最外层样式 -->
+    <style name="kb_info_item_layout">
+        <item name="android:background">@drawable/person_layout_selecter</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+    <!-- 注册登录Button全圆角 -->
+    <style name="single_btn">
+        <item name="android:background">@drawable/login_register_btn_selecter</item>
+    </style>
+    <!-- 编辑框全圆角样式 -->
+    <style name="single_layout">
+        <item name="android:background">@drawable/single_edittext</item>
+    </style>
+    <!-- 设置layout全圆角 -->
+    <style name="setting_layout_corner">
+        <item name="android:background">@drawable/person_single_selector</item>
+    </style>
+    <!-- 设置layout上圆角 -->
+    <style name="setting_layout_top">
+        <item name="android:background">@drawable/person_top_selecter</item>
+    </style>
+    <!-- 设置layout中间 -->
+    <style name="setting_layout_mid">
+        <item name="android:background">@drawable/person_mid_selecter</item>
+    </style>
+    <!-- 设置layout下圆角 -->
+    <style name="setting_layout_bottom">
+        <item name="android:background">@drawable/person_bottom_selector</item>
+    </style>
+
+    <style name="progressdialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="kb_textviewstyle">
+        <item name="android:background">@drawable/kb_textview</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="mPopupwindow">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_slide_in</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_slide_out</item>
+    </style>
+
+    <style name="filelist_checkstyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/filelist_check</item>
+    </style>
+
+</resources>

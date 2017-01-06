@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/springgreen"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/cj_back"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button"
+            android:src="@drawable/back" />
+
+        <Spinner
+            android:id="@+id/cj_spinner"
+            android:layout_width="130dp"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/cj_check"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="查询" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/cj_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include layout="@layout/tools_of_xscj_show" />
+
+        <TableLayout
+            android:id="@+id/cj_logon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp" >
+
+                <com.jiale.view.ClearableEditText
+                    android:id="@+id/cj_username"
+                    style="@style/single_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@drawable/user_account"
+                    android:drawableRight="@drawable/user_delete"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="输入学号"
+                    android:inputType="number" >
+                </com.jiale.view.ClearableEditText>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp" >
+
+                <com.jiale.view.ClearableEditText
+                    android:id="@+id/cj_password"
+                    style="@style/single_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:drawableLeft="@drawable/user_password"
+                    android:drawableRight="@drawable/user_delete"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="输入子系统密码"
+                    android:inputType="textPassword" >
+                </com.jiale.view.ClearableEditText>
+            </TableRow>
+        </TableLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CETER</string>
+    <string name="_bartitle">助手</string>
+    <string name="_tabMessage">校园公告</string>
+    <string name="_tabTools">工具</string>
+    <string name="_tabSetting">设置</string>
+    <string name="buildID">"公寓名称：   "</string>
+    <string name="apartID">"房间编号：   "</string>
+    <string name="usedID">"已使用量：   "</string>
+    <string name="leaseID">"剩余电量：   "</string>
+    <string name="recode">"记录时间：   "</string>
+    <string name="battery_progress">正在查询...</string>
+
+</resources>

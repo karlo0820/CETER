@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/springgreen" >
+
+        <ImageButton
+            android:id="@+id/person_revise_backbtn"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/person_revise_text"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/person_revise_backbtn"
+            android:gravity="center_vertical"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/person_revise_save"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button"
+            android:text="保存" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/person_revise_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+</LinearLayout>

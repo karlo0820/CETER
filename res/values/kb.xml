@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="textviewheight">100dp</dimen>
+    <dimen name="textviewmargintop">1dip</dimen>
+    <dimen name="textviewmarginright">1dip</dimen>
+
+</resources>

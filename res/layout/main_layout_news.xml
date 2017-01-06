@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/xygg_pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.jiale.view.RefreshListView
+        android:id="@+id/xygg_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/border"
+        android:dividerHeight="1dp"
+        android:listSelector="@color/transparent" >
+    </com.jiale.view.RefreshListView>
+
+    <TextView
+        android:id="@+id/xygg_pager_onloading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:enabled="true"
+        android:text="点击加载"
+        android:visibility="gone" />
+
+</FrameLayout>

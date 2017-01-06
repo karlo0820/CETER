@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/tools_items_top" />
+
+    <RelativeLayout
+        android:id="@+id/cet_show_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <com.jiale.view.ClearableEditText
+                android:id="@+id/cet_code"
+                style="@style/single_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/user_account"
+                android:drawableRight="@drawable/user_delete"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="输入准考证号"
+                android:inputType="number" >
+            </com.jiale.view.ClearableEditText>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp" >
+
+            <com.jiale.view.ClearableEditText
+                android:id="@+id/cet_name"
+                style="@style/single_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/user_password"
+                android:drawableRight="@drawable/user_delete"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="输入姓名(前两位)"
+                android:inputType="textPassword" >
+            </com.jiale.view.ClearableEditText>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
